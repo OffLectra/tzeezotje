@@ -113,6 +113,17 @@ h3 {
     height: 165px;
     flex-direction: row;
     z-index: 1;
+    &__menu {
+        display: none;
+        @media (max-width: 1481px) {
+            width: 100%;
+            display: block;
+            height: 30px;
+            padding-top: 10px;
+            
+        }
+
+    }
     &__content {
         width: 100%;
         display: flex;
@@ -130,7 +141,7 @@ h3 {
     &__nav-block {
         width: 39%;
         @media (max-width: 1480px) {
-            // display: none;
+            display: none;
 
         }
         &__nav {
@@ -491,6 +502,7 @@ h3 {
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
+        gap: 15px;
         &__contacts {
             width: 100%;
             max-width: 404px;
