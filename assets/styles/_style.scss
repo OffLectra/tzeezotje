@@ -288,22 +288,6 @@ h3 {
                     background-position: center center;
                 }
             }
-            // &__border::before {
-            //     content: url(../images/first-img.png);
-            //     display: block;
-            //     top: 95px;
-            //     left: -100px;
-            //     position: absolute;
-            //     width: 100%;
-            //     height: 100%;
-            // }
-            // &__border::after {
-            //     content: url(../images/second-img.png);
-            //     display: block;
-            //     top: -55px;
-            //     right: -100px;
-            //     position: absolute;
-            // }
         }
     }
 
@@ -556,7 +540,7 @@ h3 {
 
 }
 
-
+//form
 form {
     display: flex;
     flex-direction: column;
@@ -564,9 +548,7 @@ form {
 }
 .form-group {
     width: 100%;
-
 }
-
 .form-group_up {
     display: flex;
     gap: 19px;
@@ -582,29 +564,23 @@ form {
 }
 .form-group.form-groupRequest {
     width: 100%;
-    
 }
 .form-control.form-controlRequest {
     width: 100%;
     height: 125px;
     padding-bottom: 45px;
 }
-
 label {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     color: $black;
-    
 }
-
 .form-control {
     box-sizing: border-box;
-    // max-width: 320px;
     height: 80px;
     border: 1px solid #CCCCCC;
-
 }
 .form-control::placeholder {
     font-style: normal;
@@ -613,12 +589,10 @@ label {
     line-height: 24px;
     color: $light-gray;
 }
-
 .btn-primary {
     font-size: 24px;
     line-height: 24px;
 }
-
 iframe {
     width: 100%;
     max-width: 1170px; 
