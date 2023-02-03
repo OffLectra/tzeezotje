@@ -129,12 +129,17 @@ h3 {
     }
     &__nav-block {
         width: 39%;
+        @media (max-width: 1480px) {
+            // display: none;
+
+        }
         &__nav {
             &__list {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;
+                margin: 0 auto;
                 &__list-item {
                     list-style-type: none;
                     &__link {
@@ -142,6 +147,10 @@ h3 {
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 24px;
+                    }
+                    &__link:hover {
+                        color: $accent;
+                        text-decoration: none;
                     }
                 }
             }
@@ -156,6 +165,7 @@ h3 {
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
+        white-space: nowrap;
         &__img {
 
         }
@@ -317,6 +327,11 @@ h3 {
                 border-top: 2px solid $white;
                 border-right: 2px solid $white;
                 transform: rotate(-135deg);
+                transition: all .3s;
+            }
+            &__left-arrow:hover {
+                border-top: 6px solid $accent;
+                border-right: 6px solid $accent;
             }
             &__right-arrow {
                 width: 30px;
@@ -324,6 +339,11 @@ h3 {
                 border-top: 2px solid $white;
                 border-right: 2px solid $white;
                 transform: rotate(45deg);
+                transition: all .3s;
+            }
+            &__right-arrow:hover {
+                border-top: 6px solid $accent;
+                border-right: 6px solid $accent;
             }
         }
         &__middle-block {
@@ -597,4 +617,8 @@ iframe {
     width: 100%;
     max-width: 1170px; 
     height: 547px;
+}
+
+.header__burger {
+
 }
