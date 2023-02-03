@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tzeezotje</title>
     <link rel="icon" href="./assets/images/icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/main.css">
     <script defer src=""></script>
 </head>
@@ -50,7 +51,7 @@
                         <div class="main__welcome__subtitle">OPEN EVERYDAY &nbsp6AM - 9PM</div>
                         <h1>A bad day with lunch is better than a good day without it.</h1>
                         <div class="main__welcome__btns-block">
-                            <button class="main__welcome__btns-block__reserve-btn">Reserve a table</button>
+                            <button class="btn">Reserve a table</button>
                             <div class="circle-btns-block">
                                 <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/fb-btn.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
                                 <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/lg-btn.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
@@ -134,9 +135,11 @@
                         </div>
                         <hr class="hr-gray">
                     </div>
-
                     <div class="main__werkrooster__right">
-                        <div class="main__werkrooster__right__border"></div>
+                        <div class="main__werkrooster__right__border">
+                            <div class="main__werkrooster__right__border__first-img-block"></div>
+                            <div class="main__werkrooster__right__border__second-img-block"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -285,14 +288,44 @@
                                 <div class="footer__content__item__text-block__subtitle">Jl. Raya Surabaya 2787</div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="footer__contacts-block__questions"></div>
+
+
+
+                <div class="footer__contacts-block__questions">
+                    <h3 style="font-size: 48px;">have any questions?</h3>
+
+                    <form>
+                        <div class="form-group_up">
+                            <div class="form-group">
+                                <label for="exampleInputName">Name</label>
+                                <input type="text" class="form-control" id="exampleInputName" placeholder="Input your name">
+                                <!-- <small id="nameHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                              </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Input your email">
+                              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                            </div>
+                        </div>
+
+                        <div class="form-group_down">
+                            <div class="form-group form-groupRequest">
+                                <label for="exampleInputRequest">Speciale Request</label>
+                                <input type="text" class="form-control form-controlRequest" id="exampleInputRequest" placeholder="Input your special request">
+                              </div>
+                        </div>
+  
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+
+                </div>
             </div>
     
             <div class="footer__map-block">
-    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4131.011884064267!2d3.6456108302419263!3d51.014296218072694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37272167475eb%3A0xe6bb278afa63147f!2zS29ydHJpamtzZXN0ZWVud2VnIDI2LCA5ODMwIFNpbnQtTWFydGVucy1MYXRlbSwg0JHQtdC70YzQs9C40Y8!5e0!3m2!1sru!2sru!4v1675435423368!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
     
             <div class="footer__social-block">
@@ -300,10 +333,10 @@
                     <img src="assets/images/logo2.png" alt="" class="footer__social-block__logo-block__img">
                 </div>
                 <div class="circle-btns-block">
-                    <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/fb-btn.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
-                    <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/lg-btn.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
-                    <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/tw-btn.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
-                    <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/yt-btn.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
+                    <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/fb-black.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
+                    <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/lg-black.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
+                    <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/tw-black.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
+                    <div class="circle-btns-block__btn"><a href="#" class="circle-btns-block__btn__link"><img src="assets/images/svg/yt-black.svg" alt="" class="circle-btns-block__btn__link__img"></a></div>
                 </div>
             </div>
         </div>

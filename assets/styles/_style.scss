@@ -76,6 +76,21 @@ h3 {
     top: 0;
     left: -55px;
 }
+.btn {
+    width: 270px;
+    height: 100px;          
+    background: #3A4574;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    color: $white;
+    cursor: pointer;
+}
 
 
 /* _________CIRCLE-BTNS_SETTINGS_________ */
@@ -180,21 +195,6 @@ h3 {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            &__reserve-btn {
-                width: 270px;
-                height: 100px;          
-                background: #3A4574;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 24px;
-                border: none;
-                color: $white;
-                cursor: pointer;
-            }
         }
     }
 
@@ -204,7 +204,8 @@ h3 {
         height: 100%;
         min-height: 730px;
         &__left {
-            width: 40%;
+            width: 100%;
+            max-width: 470px;
             text-align: left;
             height: 100%;
             min-height: 555px;
@@ -235,7 +236,7 @@ h3 {
             margin-top: 80px;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            gap: 131px;
             position: relative;
         }
         &__dot-block {
@@ -252,31 +253,57 @@ h3 {
         }
         &__right {
             width: 57%;
+            height: auto;
             display: flex;
-            align-items: flex-end;
-            justify-content: center;
+            align-items: center;
+            justify-content: flex-start;
             &__border {
-                width: 471px;
+                width: 100%;
+                max-width: 471px;
                 height: 502px;
                 border: 2px solid #D3B47F;
                 position: relative;
+                &__first-img-block {
+                    position: absolute;
+                    top: 95px;
+                    left: -100px;
+
+                    background-image: url('../images/first-img.png');
+                    width: 100%;
+                    height: 100%;
+                    max-width: 323px;
+                    background-size: cover;
+                    background-position: center center;
+                }
+                &__second-img-block {
+                    position: absolute;
+                    top: -55px;
+                    right: -100px;
+
+                    background-image: url('../images/second-img.png');
+                    width: 100%;
+                    height: 100%;
+                    max-width: 323px;
+                    background-size: cover;
+                    background-position: center center;
+                }
             }
-            &__border::before {
-                content: url(../images/first-img.png);
-                display: block;
-                top: 95px;
-                left: -100px;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-            }
-            &__border::after {
-                content: url(../images/second-img.png);
-                display: block;
-                top: -55px;
-                right: -100px;
-                position: absolute;
-            }
+            // &__border::before {
+            //     content: url(../images/first-img.png);
+            //     display: block;
+            //     top: 95px;
+            //     left: -100px;
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 100%;
+            // }
+            // &__border::after {
+            //     content: url(../images/second-img.png);
+            //     display: block;
+            //     top: -55px;
+            //     right: -100px;
+            //     position: absolute;
+            // }
         }
     }
 
@@ -457,6 +484,9 @@ h3 {
     min-height: 1865px;
     padding-top: 90px;
     &__contacts-block {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
         &__contacts {
             width: 100%;
             max-width: 404px;
@@ -468,7 +498,10 @@ h3 {
                 margin-top: 38px;
             }
         }
-
+        &__questions {
+            width: 100%;
+            max-width: 670px;
+        }
     }
     &__content__item {
         display: flex;
@@ -507,6 +540,87 @@ h3 {
             }
         }
     }
+    &__map-block {
+        margin-bottom: 35px;
+    }
+    &__social-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__logo-block {
+            &__img {
+
+            }
+        }
+    }
+
+}
 
 
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.form-group {
+    width: 100%;
+
+}
+
+.form-group_up {
+    display: flex;
+    gap: 19px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.form-group_down {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.form-group.form-groupRequest {
+    width: 100%;
+    
+}
+.form-control.form-controlRequest {
+    width: 100%;
+    height: 125px;
+    padding-bottom: 45px;
+}
+
+label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: $black;
+    
+}
+
+.form-control {
+    box-sizing: border-box;
+    // max-width: 320px;
+    height: 80px;
+    border: 1px solid #CCCCCC;
+
+}
+.form-control::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $light-gray;
+}
+
+.btn-primary {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 1170px; 
+    height: 547px;
 }
